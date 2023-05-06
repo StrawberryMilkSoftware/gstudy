@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - GStudy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/imgs/favicon.png">
+</head>
+<body>
+    <div class="topnav">
+        <img height=75 width=75 src="/imgs/logo.png">
+            <a href="https://forms.gle/xDhDGh2yV3P8hnz37">Suggestions</a>
+            <a href="/create">Create</a>
+            <a href="/search" class="active">Search</a>
+            <a href="/discover">Discover</a>
+            <a href="/">Home</a>
+    </div>
+    <!--actual page content-->
+    <input id="searchbar" onkeyup="search()" type="text"
+        name="search" placeholder="Search games..." class="centerhorizontal">
+    
+    <a class="sgame" href="/">CivNow!</a><br>
+    <a class="sgame" href="/">Classic Snake</a><br>
+    <a class="sgame" href="/">Increment</a><br>
+    <a class="sgame" href="/">QRace</a><br>
+    <a class="sgame" href="/">UltimateTyper</a>
+
+    <!--js-->
+    <script src="search.js"></script>
+</body>
+</html>

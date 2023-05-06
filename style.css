@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+ font-family: Bebas Neue; 
+ text-decoration: none;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-image: linear-gradient(#94f79c, #7bd182);
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Bebas Neue;
+	background-color: #47964d;
+	border-radius: 10px;
+	margin: 10px;
+	transition: .5s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: rgb(43, 85, 43);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.topnav span {
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Bebas Neue;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+
+
+.game img {
+		width: 300px;
+		height: 200px;
+		background-color: green;
+		border-radius: 10px;
+}
+
+.game h2 {
+	font-family: Bebas Neue;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0, 0, 0, 50%);
+		color: white;
+		width: 75%;
+		height: 30%;
+ 	margin-bottom: auto;
+		border-radius: 0px 75px 0px 30px;
+}
+
+.game {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.scrollbar {
+ 	overflow: scroll; 
+		height: 200px;
+}
+
+.logo1 {
+	background-color:rgba(0, 0, 0, 50%);
+	height: 300px;
+	border-radius: 50px;
+	display: block;
+	margin: auto;
+}
+
+button {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Bebas Neue;
+	background-color: #47964d;
+	border-radius: 10px;
+	margin: 10px;
+	border: 0;
+	transition: .5s;
+}
+
+button:hover {
+	background-color: rgb(43, 85, 43);
+}	
+
+.centerhorizontal {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchbar {
+	margin-top: 10px;
+	padding: 10px;
+	width: 75vw;
+	border: 2px solid gray;
+	border-radius: 10px;
+	height: 25px;
+	transition: 0.5s;
+}
+
+#searchbar:focus {
+	background-color: rgb(229, 255, 229);
+}
+
+.sgame {
+	text-align:center;
+	color: green;
+	display: block;
+}
