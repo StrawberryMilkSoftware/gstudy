@@ -1,0 +1,46 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Clickalicker</title>
+  
+</head>
+
+<body onload="init()">
+  <script src="script.js"></script>
+  <h1>Clickalicker</h1>
+  <p>say it 5 times fast
+  <hr>
+  <div class="questions">
+  </div>
+  <div id="game">
+    <p>Current Known WR: 677 intake</p>
+    <button id="btn">Click me!</button>
+    <p id="currentintake">Current intake: 1</p>
+    <button class="upg" id="upg1">+2 click intake (5 clicks)</button>
+    <button class="upg" id="upg2">+10 click intake (500 clicks)</button>
+    <button class="upg" id="upg3">+50 click intake (5000 clicks)</button>
+    <button class="upg" id="upg4">+100 click intake (7500 clicks)</button>
+    <p id="nextgoal">Next goal: 1,000</p>
+    <button class="upg" id="dbgskip">(debug) skip to goal</button>
+    <div class="h2p">
+    <p>Clickalicker was made by Strawberry Milk Software for GStudy.</p>
+    </div>
+    </div>
+  <script>
+    document.getElementById("btn").addEventListener("click", lala);
+    document.getElementById("upg1").addEventListener("click", upgrade1);
+    document.getElementById("upg2").addEventListener("click", upgrade2);
+    document.getElementById("upg3").addEventListener("click", upgrade3);
+    document.getElementById("upg4").addEventListener("click", upgrade4);
+    document.getElementById("dbgskip").addEventListener("click", skip);
+  </script>
+</body>
+
+</html>
