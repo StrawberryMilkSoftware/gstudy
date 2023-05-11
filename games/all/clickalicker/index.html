@@ -1,0 +1,39 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Clickalicker</title>
+  
+</head>
+
+<body onload = "docReady(init)">
+  <h1>Clickalicker</h1>
+  <p>say it 5 times fast</p>
+  <hr>
+  <div id="questions">
+    <h1 id="q">null q</h1>
+    <button class="a" data-oldid="a1" id="a1">null a</button> 
+    <button class="a" data-oldid="a2" id="a2">null a</button> 
+    <button class="a" data-oldid="a3" id="a3">null a</button> 
+    <button class="a" data-oldid="a4" id="a4">null a</button> 
+  </div>
+  <div id="game">
+    <p>Current Known WR: 677 intake</p>
+    <button id="btn">Click me!</button>
+    <p id="currentintake">Current intake: 1</p>
+    <button class="upg" id="upg1">+2 click intake (5 clicks)</button>
+    <button class="upg" id="upg2">+10 click intake (500 clicks)</button>
+    <button class="upg" id="upg3">+50 click intake (5000 clicks)</button>
+    <button class="upg" id="upg4">+100 click intake (7500 clicks)</button>
+    <p id="nextgoal">Next goal: 1,000</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
