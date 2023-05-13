@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
 * {
 	font-family: Darumadrop One;
@@ -75,6 +75,7 @@ button:hover {
   bottom: 0px;
   z-index: 9;
   background-color: #abbeff;
+  display: none;
 }
 
 .a {
