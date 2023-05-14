@@ -1,0 +1,40 @@
+{
+  "questions":{
+    "1":{
+      "text":"What is 2^3?",
+      "answers":{
+        "answer0":"8",
+        "answer1":"6",
+        "answer2":"9",
+        "answer3":"4"
+      }
+    },
+    "2":{
+      "text":"Solve for x: 2x=6",
+      "answers":{
+        "answer0":"3",
+        "answer1":"2",
+        "answer2":"12",
+        "answer3":"6"
+      }
+    },
+    "3":{
+      "text":"a+b=c, a=15, c=25. What is a÷b?",
+      "answers":{
+        "answer0":"1.5",
+        "answer1":"150",
+        "answer2":"10",
+        "answer3":"1,000"
+      }
+    },
+    "4":{
+      "text":"What is a median?",
+      "answers":{
+        "answer0":"The number in the middle",
+        "answer1":"The sum of the numbers divided by the number of entries",
+        "answer2":"The number that occurs the most",
+        "answer3":"25"
+      }
+    }
+  }
+}
