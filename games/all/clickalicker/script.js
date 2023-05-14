@@ -173,7 +173,7 @@ function openQuestions(){
   }
 
   let rand = getRndInteger(0, 4);
-  rand2 = getRndInteger(1, 5);
+  rand2 = getRndInteger(1, 10);
 
   const game = document.getElementById('game');
   game.style.display = "none";
