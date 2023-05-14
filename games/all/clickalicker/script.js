@@ -27,7 +27,6 @@ function closeQuestions(){
   q = document.getElementById('questions');
   q.style.display = "none";
   ca = document.getElementById("correct");
-  ca.id = ca.getAttribute('data-old');
   ca.innerHTML = "No answer...";
 }
 
@@ -35,7 +34,6 @@ function closeQuestions(){
 function lala(){
   	clicknum = clicknum + mult;
   	document.getElementById('btn').innerHTML = clicknum;
-  	console.log("click");
     if (clicknum >= 1000){
         document.getElementById("upg2").style.display = "block";
         nextgoal = 10000;
@@ -64,15 +62,15 @@ function upgrade1(){
       if (lastQRes == true){
           mult = mult + 2;
         clicknum = clicknum - upg1clicksneeded
-        document.getElementById('btn').innerHTML = clicknum;
         upg1clicksneeded = upg1clicksneeded * 3
         document.getElementById('upg1').innerHTML = ("+2 click intake (" + upg1clicksneeded + " clicks)")
       }
       else {
-        clicknum = clicknum - (upg1clicksneeded / 2)
+        clicknum = clicknum - Math.round(upg1clicksneeded / 2)
       }
     }
     document.getElementById("currentintake").innerHTML = ("Current intake: " + mult)
+    document.getElementById('btn').innerHTML = clicknum;
 }
 
 function upgrade2(){
@@ -81,31 +79,31 @@ function upgrade2(){
       if (lastQRes == true){
           mult = mult + 10;
         clicknum = clicknum - upg2clicksneeded
-        document.getElementById('btn').innerHTML = clicknum;
         upg2clicksneeded = upg2clicksneeded * 3
         document.getElementById('upg2').innerHTML = ("+10 click intake (" + upg2clicksneeded + " clicks)")
       }
       else {
-        clicknum = clicknum - (upg2clicksneeded / 2)
+        clicknum = clicknum - Math.round(upg2clicksneeded / 2)
       }
     document.getElementById("currentintake").innerHTML = ("Current intake: " + mult)
-}
+    document.getElementById('btn').innerHTML = clicknum;
+}}
 
 function upgrade3(){
-    if (clicknum >= upg1clicksneeded){
+    if (clicknum >= upg3clicksneeded){
       openQuestions();
       if (lastQRes == true){
           mult = mult + 50;
         clicknum = clicknum - upg3clicksneeded
-        document.getElementById('btn').innerHTML = clicknum;
         upg3clicksneeded = upg3clicksneeded * 3
         document.getElementById('upg3').innerHTML = ("+50 click intake (" + upg3clicksneeded + " clicks)")
       }
       else {
-        clicknum = clicknum - (upg3clicksneeded / 2)
+        clicknum = clicknum - Math.round(upg3clicksneeded / 2)
       }
     }
     document.getElementById("currentintake").innerHTML = ("Current intake: " + mult)
+    document.getElementById('btn').innerHTML = clicknum;
 }
 
 function upgrade4(){
@@ -114,61 +112,68 @@ function upgrade4(){
       if (lastQRes == true){
           mult = mult + 100;
         clicknum = clicknum - upg4clicksneeded
-        document.getElementById('btn').innerHTML = clicknum;
         upg4clicksneeded = upg4clicksneeded * 3
         document.getElementById('upg4').innerHTML = ("+100 click intake (" + upg4clicksneeded + " clicks)")
       }
       else {
-        clicknum = clicknum - (upg1clicksneeded / 2)
+        clicknum = clicknum - Math.round(upg4clicksneeded / 2)
       }
     }
     document.getElementById("currentintake").innerHTML = ("Current intake: " + mult)
+    document.getElementById('btn').innerHTML = clicknum;
 }
 
 function checka1() {
-    console.log("checka1");
-    closeQuestions();
+  closeQuestions();
     if (a1.id === "correct"){
+      window.alert("Correct!");
       return true;
     }
+    window.alert("Sorry, incorrect.");
     return false;
-    
 }
 
 function checka2() {
-  console.log("checka2");
   closeQuestions();
-    if(a2.id === "correct")
+    if (a2.id === "correct"){
+      window.alert("Correct!");
       return true;
     }
+    window.alert("Sorry, incorrect.");
     return false;
-} 
+}
 
 function checka3() {
-  console.log("checka3");
   closeQuestions();
     if (a3.id === "correct"){
+      window.alert("Correct!");
       return true;
     }
+    window.alert("Sorry, incorrect.");
     return false;
 }
 
 function checka4() {
-  console.log("checka4");
   closeQuestions();
     if (a4.id === "correct"){
+      window.alert("Correct!");
       return true;
     }
+    window.alert("Sorry, incorrect.");
     return false;
 }
 
 function openQuestions(){
-  console.log("opened questions");
+
+  try {
+    ca = document.getElementById("correct");
+  ca.id = ca.getAttribute('data-old');
+  }
+  catch (error) {
+  }
+
   let rand = getRndInteger(0, 4);
   rand2 = getRndInteger(1, 5);
-
-  console.log("rand is " + rand);
-  console.log("rand2 is " + rand2);
 
   const game = document.getElementById('game');
   game.style.display = "none";
@@ -201,28 +206,19 @@ function openQuestions(){
       }
       a[i].addEventListener('click', () => {
         if (i === 0){
-          const isCorrect = checka1();
+          lastQRes = checka1();
         }
         if (i === 1){
-          const isCorrect = checka2();
+          lastQRes = checka2();
         }
         if (i === 2){
-          const isCorrect = checka3();
+          lastQRes = checka3();
         }
         if (i === 3){
-          const isCorrect = checka4();
+          lastQRes = checka4();
         }
-
-        lastQRes = isCorrect;
-        console.log(lastQRes);
-        closeQuestions();
       });
     }
-    console.log(a[rand]);
-
-    
-        
-    
   });
 }
 
