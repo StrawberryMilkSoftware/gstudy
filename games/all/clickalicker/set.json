@@ -35,6 +35,51 @@
         "answer2":"The number that occurs the most",
         "answer3":"25"
       }
+    },
+    "5":{
+      "text":"Correctly capitalize the following sentence: johnny went to walmart to Get some Chicken.",
+      "answers":{
+        "answer0":"Johnny went to Walmart to get some chicken.",
+        "answer1":"Johnny went to walmart to get some chicken.",
+        "answer2":"Johnny Went To Walmart To Get Some Chicken.",
+        "answer3":"Johnny went to Walmart to Get some Chicken."
+      }
+    },
+    "6":{
+      "text":"What is the smallest unit of life?",
+      "answers":{
+        "answer0":"Cell",
+        "answer1":"Bug",
+        "answer2":"Human",
+        "answer3":"Microscope"
+      }
+    },
+    "7":{
+      "text":"What does 'anticipate' mean?",
+      "answers":{
+        "answer0":"To expect",
+        "answer1":"To answer a question",
+        "answer2":"To take part of",
+        "answer3":"To wait for"
+      }
+    },
+    "8":{
+      "text":"Who wrote the Illiad?",
+      "answers":{
+        "answer0":"Homer",
+        "answer1":"Aristotle",
+        "answer2":"Socrates",
+        "answer3":"Plato"
+      }
+    },
+    "9":{
+      "text":"What is one reason that the Western Roman Empire fell?",
+      "answers":{
+        "answer0":"Attacks from Germanic tribes",
+        "answer1":"The leader granted the land to other nations",
+        "answer2":"It never fell",
+        "answer3":"Attacks from Germany"
+      }
     }
   }
 }
